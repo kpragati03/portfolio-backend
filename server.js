@@ -11,8 +11,19 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middlewares
-app.use(cors({ origin: process.env.FRONTEND_URL || "http://localhost:5173" }));
+// Middlewares - CORS configuration updated for multiple origins
+app.use(cors({ 
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://portfolio-frontend-git-main-pragati-kumaris-projects-1dcb6d08.vercel.app",
+    process.env.FRONTEND_URL
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Accept']
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
