@@ -1,4 +1,3 @@
-// server.js
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -10,18 +9,29 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// CORS Configuration - Allow multiple origins
-app.use(cors({ 
-  origin: [
-    "http://localhost:5173",
-    "http://localhost:3000",
-    "https://portfolio-frontend-git-main-pragati-kumaris-projects-1dcb6d08.vercel.app",
-    process.env.FRONTEND_URL
-  ],
+// --- THIS IS THE CORRECT, FLEXIBLE CORS CONFIGURATION ---
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://portfolio-frontend-one-opal.vercel.app", // Your main production URL
+  /https:\/\/portfolio-frontend-git.*\.vercel\.app$/ // A pattern to match all Vercel preview URLs
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.some(o => o instanceof RegExp ? o.test(origin) : o === origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept']
 }));
+// ---------------------------------------------------------
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -41,8 +51,6 @@ mongoose
 app.get("/", (_req, res) => {
   res.send("Server is running!");
 });
-
-app.get("/health", (_req, res) => res.json({ ok: true }));
 
 app.use("/api/contact", contactRoutes);
 
