@@ -1,27 +1,24 @@
 import { Router } from "express";
 import Contact from "../models/contact.js";
 
-const router = Router()
+const router = Router();
 
 router.post("/", async (req, res) => {
   try {
-    console.log("Received body:", req.body); 
-    
+    console.log("Received body:", req.body);
+
     const { name, email, phone, subject, message } = req.body;
 
     // Trim and validate required fields
-    if (
-      !name?.trim() ||
-      !email?.trim() ||
-      !message?.trim()
-    ) {
+    if (!name?.trim() || !email?.trim() || !message?.trim()) {
       return res.status(400).json({
         success: false,
         error: "Name, email, and message are required.",
       });
     }
 
-    const doc = await contact.create({
+    // <-- THE FIX IS HERE: Use "Contact" (uppercase C) to match your import
+    const doc = await Contact.create({
       name: name.trim(),
       email: email.trim(),
       phone: phone?.trim() || "",
