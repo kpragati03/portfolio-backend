@@ -107,10 +107,36 @@ Endpoint: POST /api/contact
 Sample Input (JSON):
 
 json
+
 {
+
   "name": "John Doe",
+  
   "email": "john.doe@example.com",
+  
   "message": "Hello, I am interested in collaborating with you!"
+
+}
+
+Sample Output (JSON): 
+
+json
+
+{
+
+  "success": true,
+  
+  "message": "Contact form submitted successfully",
+  
+  "data": {
+  
+    "_id": "650af2c72b0d3e00123abcd4",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "message": "Hello, I am interested in collaborating with you!",
+    "createdAt": "2025-09-20T12:30:15.000Z"
+    
+  }
 }
 
 
