@@ -102,7 +102,7 @@ The backend exposes RESTful API endpoints that allow the frontend to dynamically
 }
 ---
 
-## Feature List
+-## Feature List
 - User-Friendly APIs
 - Project Management & Contact Form Handling
 - Environment Configuration
