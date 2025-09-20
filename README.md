@@ -100,7 +100,7 @@ The backend exposes RESTful API endpoints that allow the frontend to dynamically
     "createdAt": "2025-09-20T12:30:15.000Z"
   }
 }
-  
+---
 ## Feature List
 - User-Friendly APIs
 - Project Management & Contact Form Handling
