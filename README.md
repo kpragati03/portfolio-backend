@@ -1,98 +1,109 @@
 # Portfolio Backend
 
 ## Project Objective
-This is the backend server for the Portfolio Web Application.
-It provides RESTful APIs for handling user data, contact form submissions, and project details. Built with Node.js, Express.js, and MongoDB, it powers the frontend portfolio app with dynamic data.
+This is the backend server for the Portfolio Web Application. It provides RESTful APIs for handling user data, contact form submissions, and project details. Built with Node.js, Express.js, and MongoDB, it powers the frontend portfolio app with dynamic data.
 
-The objective of the Portfolio Backend is to provide a secure and reliable server-side application that powers the portfolio website. It is designed to:
+The objective of the Portfolio Backend is to provide a secure and reliable server-side application that is designed to:
 
- . Store and manage portfolio data such as projects, skills, and user details.
-
- . Handle contact form submissions and store them in a database for easy access.
-
- . Expose a set of RESTful APIs to the frontend so content can be updated dynamically without modifying code.
-
- . Ensure scalability and maintainability through a clean structure with routes, models, and controllers.
-
- . Provide flexibility for deployment on cloud platforms like Render, Railway, or Heroku.
- 
- ---
-
- ## Brief Description
- The backend exposes RESTful API endpoints that allow the frontend to dynamically fetch and display data, ensuring that updates to the portfolio can be made easily without changing the frontend code.It connects with a MongoDB database to store and manage portfolio information such as projects, skills, and contact messages.
- ---
-
- ## Links
- -** GitHub Repository:** https://github.com/kpragati03/portfolio-backend.git
-
- **Live Demo:**
- ---
-
- 
-**##Technologies Used**
-Node.js & Express.js 
-MongoDB & Mongoose
-dotenv 
-Nodemon 
-Git & GitHub 
-Render / Railway / Heroku (optional) 
-
-**##How to Run Locally**
-
-Clone the repository
-
-Bash
-
-git clone  https://github.com/kpragati03/portfolio-backend.git
-
-cd portfolio-backend
-
-Install Dependencies
-
-Bash
-
-npm install
-Configure Environment Variables
-
-env
-
-PORT=5000
-MONGO_URI=
-Start the server
-
-. For development (auto-restart with nodemon):
-
-Bash
-
-npm run dev
-
-. For production:
-
-Bash
-
-npm start
-
-
-
-**##Challenges Faced & Solutions**
-*Challenge:* CORS (Cross-Origin Resource Sharing) Errors
-
-*Solution:* Integrated the cors middleware in Express to allow requests from the frontend domain .
-
-*Challenge:* Error Handling & Validation
-
-*Solution:* Added centralized error-handling middleware in Express and used Mongoose validation to ensure data integrity.
-
-*Challenge:* Project Structure & Scalability
-
-*Solution:* Organized the codebase into routes, models, and controllers, making the backend modular, scalable, and easier to maintain.
-
-
-## Screenshots
+- Store and manage portfolio data such as projects, skills, and user details.
+- Handle contact form submissions and store them in a database.
+- Expose a set of RESTful APIs to the frontend for dynamic content.
+- Ensure scalability through a clean structure with routes, models, and controllers.
 
 ---
 
-## Feature List
+## Brief Description
+The backend exposes RESTful API endpoints that allow the frontend to dynamically fetch and display data. It connects with a MongoDB database to store and manage portfolio information such as projects, skills, and contact messages.
+
+---
+
+## Links
+- **GitHub Repository:** `https://github.com/kpragati03/portfolio-backend.git`
+- **Live Demo:** `https://portfolio-backend-apey.onrender.com`
+
+---
+
+## Technologies Used
+- Node.js & Express.js
+- MongoDB & Mongoose
+- `dotenv` for environment variables
+- `nodemon` for live reloading in development
+- Git & GitHub
+- Render for deployment
+
+---
+
+## How to Run Locally
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/kpragati03/portfolio-backend.git](https://github.com/kpragati03/portfolio-backend.git)
+    ```
+
+2.  **Navigate into the project folder**
+    ```bash
+    cd portfolio-backend
+    ```
+
+3.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+4.  **Configure Environment Variables**
+    - Create a `.env` file in the root of the project.
+    - Add the following variables:
+      ```env
+      PORT=5000
+      MONGODB_URI=YOUR_MONGODB_CONNECTION_STRING
+      FRONTEND_URL=http://localhost:5173
+      ```
+
+5.  **Start the server**
+    - For development (with auto-restart):
+      ```bash
+      npm run dev
+      ```
+    - For production:
+      ```bash
+      npm start
+      ```
+
+---
+
+## API Endpoints
+
+### Contact Form Submission
+- **Endpoint:** `POST /api/contact`
+- **Description:** Receives and stores a contact form submission.
+- **Sample Input (JSON):**
+  ```json
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "message": "Hello, I am interested in collaborating with you!"
+  }
+
+
+-**Sample Output (JSON):** 
+
+```JSON
+
+{
+  "success": true,
+  "message": "Contact form submitted successfully",
+  "data": {
+    "_id": "650af2c72b0d3e00123abcd4",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "message": "Hello, I am interested in collaborating with you!",
+    "createdAt": "2025-09-20T12:30:15.000Z"
+  }
+}
+  
+
+**##Feature List**
+
 - User-Friendly APIs
 - Project Management , Contact Form Handling, Environment Configuration 
 - MongoDB Integration 
@@ -102,47 +113,7 @@ npm start
 
 ---
 
-## Sample Input & Output 
-Contact Form Submission
 
-Endpoint: POST /api/contact
-Sample Input (JSON):
-
-json
-
-{
-
-  "name": "John Doe",
-  
-  "email": "john.doe@example.com",
-  
-  "message": "Hello, I am interested in collaborating with you!"
-
-}
-
-Sample Output (JSON): 
-
-json
-
-{
-
-  "success": true,
-  
-  "message": "Contact form submitted successfully",
-  
-  "data": {
-  
-    "_id": "650af2c72b0d3e00123abcd4",
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "message": "Hello, I am interested in collaborating with you!",
-    "createdAt": "2025-09-20T12:30:15.000Z"
-    
-  }
-  
-}
-
----
 
 ## Evaluation Criteria Mapping
 
