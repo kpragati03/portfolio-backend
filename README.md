@@ -111,7 +111,7 @@ The backend exposes RESTful API endpoints that allow the frontend to dynamically
 - Scalable Project Structure , Hot Reload in Development 
 - Deployment Ready
 
----
+
 
 
 
@@ -129,7 +129,7 @@ The backend exposes RESTful API endpoints that allow the frontend to dynamically
 | **Testing & Verification** | Verified APIs using Postman with sample input/output requests and responses.                   |
 | **Documentation**          | README includes setup instructions, API usage, screenshots, and project explanation.           |
 
----
+
 
 **#Team Contributions**
 
