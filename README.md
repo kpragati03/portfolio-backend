@@ -72,7 +72,7 @@ Bash
 
 npm start
 
----
+
 
 **##Challenges Faced & Solutions**
 *Challenge:* CORS (Cross-Origin Resource Sharing) Errors
