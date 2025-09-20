@@ -101,91 +101,65 @@ The backend exposes RESTful API endpoints that allow the frontend to dynamically
   }
 }
   
-
-**##Feature List**
-
+## Feature List
 - User-Friendly APIs
-- Project Management , Contact Form Handling, Environment Configuration 
-- MongoDB Integration 
-- Error Handling, CORS Support
-- Scalable Project Structure , Hot Reload in Development 
+- Project Management & Contact Form Handling
+- Environment Configuration
+- MongoDB Integration
+- Error Handling & CORS Support
+- Scalable Project Structure
+- Hot Reload in Development
 - Deployment Ready
 
-
-
-
+---
 
 ## Evaluation Criteria Mapping
 
-| **Criteria**               | **Implementation in Project**                                                                  |
-| -------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Project Objective**      | Backend provides APIs for managing portfolio data and handling contact form submissions.       |
-| **Technology Usage**       | Implemented using Node.js, Express.js, MongoDB, and Mongoose for scalable backend development. |
-| **Project Structure**      | Organized into routes, models, and controllers for maintainability and scalability.            |
-| **Functionality**          | APIs successfully handle CRUD operations for projects and contact messages.                    |
-| **Error Handling**         | Centralized error-handling middleware ensures clean and consistent API responses.              |
-| **Deployment Readiness**   | Configured with environment variables and tested on cloud platforms like Render/Heroku.        |
-| **User Interaction**       | Provides RESTful APIs consumed by the frontend for dynamic content updates.                    |
-| **Testing & Verification** | Verified APIs using Postman with sample input/output requests and responses.                   |
-| **Documentation**          | README includes setup instructions, API usage, screenshots, and project explanation.           |
+| **Criteria** | **Implementation in Project** |
+| ------------------------ | ---------------------------------------------------------------------------------------------- |
+| **Project Objective** | Backend provides APIs for managing portfolio data and handling contact form submissions.       |
+| **Technology Usage** | Implemented using Node.js, Express.js, MongoDB, and Mongoose for scalable backend development. |
+| **Project Structure** | Organized into routes, models, and controllers for maintainability and scalability.          |
+| **Functionality** | APIs successfully handle CRUD operations for projects and contact messages.                    |
+| **Error Handling** | Centralized error-handling middleware ensures clean and consistent API responses.              |
+| **Deployment Readiness** | Configured with environment variables and tested on cloud platforms like Render.               |
+| **User Interaction** | Provides RESTful APIs consumed by the frontend for dynamic content updates.                    |
+| **Testing & Verification**| Verified APIs using Postman with sample input/output requests and responses.                 |
+| **Documentation** | README includes setup instructions, API usage, and project explanation.                        |
 
+---
 
-
-**#Team Contributions**
+## Team Contributions
 
 This project was a collaborative effort where each team member took ownership of key areas of the development lifecycle, from conception to deployment. The main responsibilities were distributed as follows:
 
-
-
-
-****##Pragati Kumari (Project Lead & Lead Full-Stack Developer)****
-
+### Pragati Kumari (Project Lead & Lead Full-Stack Developer)
 As the project lead, Pragati spearheaded the technical direction and was responsible for the entire frontend development and the successful deployment of the full-stack application.
 
-*Project Leadership & Architecture:* Led the project initiation, defined the technical architecture, and selected the MERN stack technologies.
+- **Project Leadership & Architecture:** Led the project initiation, defined the technical architecture, and selected the MERN stack technologies.
+- **Lead Frontend Development:** Single-handedly designed and developed the entire frontend application using React.
+- **Full-Stack Deployment & DevOps:** Managed the complete end-to-end deployment pipeline, deploying the frontend to Vercel and the backend to Render.
+- **Critical Bug Resolution:** Systematically troubleshooted and resolved complex integration issues, including CORS policies, case-sensitivity bugs, and server-side deployment errors.
+- **Version Control & Documentation:** Established the final GitHub repositories and authored the comprehensive technical documentation.
 
-*Lead Frontend Development:* Single-handedly designed and developed the entire frontend application using React. This included creating all components, implementing the UI/UX, styling, and adding light/dark mode theme functionalities.
-
-*Full-Stack Deployment & DevOps:* Managed the complete end-to-end deployment pipeline, deploying the frontend to Vercel and the backend to Render.
-
-*Critical Bug Resolution:* Systematically troubleshooted and resolved complex integration issues, including Cross-Origin Resource Sharing (CORS) policies, case-sensitivity bugs, and server-side deployment errors.
-
-*Version Control & Documentation:* Established the final GitHub repositories and authored the comprehensive technical documentation, including setup guides, deployment links, and documenting project challenges.
-
-
-
-
-
-****##Saroj Padhi (Lead Backend Developer)****
-
+### Saroj Padhi (Lead Backend Developer)
 Saroj was responsible for building the entire server-side of the application, ensuring a robust and scalable backend to support the frontend's features.
 
-*Backend Architecture:*  Architected and implemented the entire server-side application using Node.js and Express.js.
+- **Backend Architecture:** Architected and implemented the entire server-side application using Node.js and Express.js.
+- **Database Management:** Designed the MongoDB schema for the contact form and managed the complete database integration and connectivity.
+- **API Development:** Developed, tested, and secured all the API endpoints required for the frontend to interact with the database.
 
-*Database Management:* Designed the MongoDB schema for the contact form and managed the complete database integration and connectivity.
-
-*API Development:* Developed, tested, and secured all the API endpoints required for the frontend to interact with the database.
-
-
-
-
-
-****##Dommaraju Jyothshna Sree (Project Contributor)****
+### Dommaraju Jyothshna Sree (Project Contributor)
 Jyothshna played a key role in the initial phase of the project, helping to set up the foundational elements.
 
-*Initial Setup & Scaffolding:* Contributed to the project's kickoff by creating the initial GitHub repository.
+- **Initial Setup & Scaffolding:** Contributed to the project's kickoff by creating the initial GitHub repository.
+- **Documentation:** Authored the first draft of the project's README file, which laid the groundwork for the final documentation.
 
-*Documentation:* Authored the first draft of the project's README file, which laid the groundwork for the final documentation.
+---
 
+## Authors
+- Pragati Kumari
+- Saroj Padhi
+- Dommaraju Jyothshna Sree
 
-
-## Author
-
-*Name:*   PRAGATI KUMARI,
-          SAROJ PADHI,
-          DOMMARAJU JYOTHSHNA SREE.
-
-*Date:* 20 september 2025
-
-
-
+*Date: September 20, 2025*
