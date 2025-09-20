@@ -99,7 +99,7 @@ The backend exposes RESTful API endpoints that allow the frontend to dynamically
     "message": "Hello, I am interested in collaborating with you!",
     "createdAt": "2025-09-20T12:30:15.000Z"
   }
-}
+} ```
 ---
 
 -## Feature List
