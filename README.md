@@ -44,7 +44,9 @@ Clone the repository
 Bash
 
 git clone  https://github.com/kpragati03/portfolio-backend.git
+
 cd portfolio-backend
+
 Install Dependencies
 
 Bash
