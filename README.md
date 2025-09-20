@@ -125,11 +125,8 @@ json
 {
 
   "success": true,
-  
   "message": "Contact form submitted successfully",
-  
   "data": {
-  
     "_id": "650af2c72b0d3e00123abcd4",
     "name": "John Doe",
     "email": "john.doe@example.com",
@@ -137,6 +134,7 @@ json
     "createdAt": "2025-09-20T12:30:15.000Z"
     
   }
+  
 }
 
 
