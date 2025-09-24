@@ -19,7 +19,7 @@ The backend exposes RESTful API endpoints that allow the frontend to dynamically
 
 ## Links
 - **GitHub Repository:** https://github.com/kpragati03/portfolio-backend.git
-- **Live Demo:** https://portfolio-backend-apey.onrender.com**
+- **Live Demo:** https://portfolio-backend-apey.onrender.com
 
 ---
 
